@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .top-nav {
+            background-color: #003399;
+            color: white;
+            padding: 10px;
+        }
+
+        .top-nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            margin: 0;
+            padding: 0;
+        }
+
+        .top-nav ul li {
+            display: inline;
+        }
+
+        .top-nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+
+
+        .login-container {
+            width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin: 100px auto;
+        }
+
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        .input-field {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        .captcha-image {
+            display: block;
+            margin: 10px 0;
+        }
+
+        .captcha-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .captcha-container img {
+            margin-right: 10px;
+        }
+
+        .captcha-container input {
+            width: 60%;
+        }
+
+        .button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 0;
+            /*position: absolute;*/
+            /*top: 40%;*/
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        .reset-button {
+            background-color: #6c757d;
+        }
+
+        .reset-button:hover {
+            background-color: #5a6268;
+        }
+
+        .links {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .links a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="top-nav">
+            <ul>
+                <li><a href="./Home.html">Home</a></li>
+                <li><a href="./">My Account & Profile</a></li>
+                <li><a href="./">Payments/ Transfer</a></li>
+                <li><a href="./">Deposite & Investment</a></li>
+                <li><a href="./">e-Tax</a></li>
+                <li><a href="./">e-Services</a></li>
+                <li><a href="./">Request & Enqueries</a></li>
+                <li><a href="./">Useful Links</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="login-container">
+
+        <h2>Login</h2>
+        <form>
+            <label for="username">Username*</label><br>
+            <input type="text" id="username" name="username" class="input-field" required><br>
+
+            <label for="password">Password*</label><br>
+            <input type="password" id="password" name="password" class="input-field" required><br>
+
+            <!--<label for="captcha">Enter the text as shown in the image *</label>-->
+            <!--<div class="captcha-container">-->
+            <!--    <img src="captcha-image.png" alt="Captcha" class="captcha-image">-->
+            <!--    <input type="text" id="captcha" name="captcha" class="input-field" required>-->
+            <!--</div>-->
+
+            <!--<div>-->
+            <!--    <input type="radio" id="imageCaptcha" name="captchaType" value="ImageCaptcha" checked>-->
+            <!--    <label for="imageCaptcha">Image Captcha</label><br>-->
+            <!--    <input type="radio" id="audioCaptcha" name="captchaType" value="AudioCaptcha">-->
+            <!--    <label for="audioCaptcha">Audio Captcha</label>-->
+            <!--</div>-->
+
+            <br>
+            <button type="submit" class="button">Login</button>
+            <button type="reset" class="button reset-button">Reset</button>
+        </form>
+        <div class="links">
+            <a href="./UserRegistration.html">New User? Register here/Activate</a><br>
+            <a href="#">Forgot Username / Login Password</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
